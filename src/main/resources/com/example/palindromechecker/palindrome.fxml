@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.palindromechecker.controllers.PalindromeController">
+    <VBox spacing="10" alignment="center">
+        <Label text="Enter a word:" />
+        <TextField fx:id="wordInput" promptText="Enter word here" />
+
+        <Button text="Check using string reversal" onAction="#checkUsingStringReversal" />
+        <Button text="Check using pointers" onAction="#checkUsingPointers" />
+    </VBox>
+</GridPane>
