@@ -23,9 +23,9 @@ public class PalindromeController {
         boolean isPalindrome = PalindromeChecker.checkV2(input);
         double processTime = (System.nanoTime() - startTime)/1000000d;
         if (isPalindrome) {
-            new Alert(Alert.AlertType.INFORMATION, "Given string is a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
+            new Alert(Alert.AlertType.INFORMATION, "The given string is a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
         } else {
-            new Alert(Alert.AlertType.ERROR, "Given string is not a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
+            new Alert(Alert.AlertType.ERROR, "The given string is not a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
         }
     }
 
@@ -36,9 +36,9 @@ public class PalindromeController {
         boolean isPalindrome = PalindromeChecker.checkV1(input);
         double processTime = (System.nanoTime() - startTime)/1000000d;
         if (isPalindrome) {
-            new Alert(Alert.AlertType.INFORMATION, "Given string is a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
+            new Alert(Alert.AlertType.INFORMATION, "The given string is a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
         } else {
-            new Alert(Alert.AlertType.ERROR, "Given string is not a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
+            new Alert(Alert.AlertType.ERROR, "The given string is not a palindrome.\n Resulted in %s millis.".formatted(processTime)).showAndWait();
         }
     }
 }

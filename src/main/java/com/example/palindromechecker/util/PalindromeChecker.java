@@ -1,7 +1,7 @@
 package com.example.palindromechecker.util;
 
 /**
- * The PalindromeChecker class provides methods for checking if a given input string is a palindrome.
+ * The PalindromeChecker class provides methods for checking whether a given input string is a palindrome.
  */
 public class PalindromeChecker {
 
@@ -61,7 +61,7 @@ public class PalindromeChecker {
      * @return a new string containing only letters
      */
     private static String filterLetters(String string) {
-        return string.replace("[^a-zA-Z]", "");
+        return string.replace("[^a-zA-Z]", "").toLowerCase();
     }
 
     /**
